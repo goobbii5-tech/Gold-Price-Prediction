@@ -1,0 +1,217 @@
+{
+  "best_model_name": "Linear Regression",
+  "features": [
+    "Silver_Price_USD",
+    "Crude_Oil_USD",
+    "USD_Index",
+    "SP500_Index",
+    "Inflation_Rate_%",
+    "Interest_Rate_%",
+    "VIX_Volatility_Index",
+    "USD_INR_Rate",
+    "Gold_ETF_Holdings_Tonnes",
+    "Gold_Trading_Volume",
+    "Gold_Price_Lag1",
+    "Gold_Price_Lag7",
+    "Gold_MA_7",
+    "Gold_MA_30",
+    "Gold_Volatility_7"
+  ],
+  "target": "Gold_Price_USD",
+  "test_mae": 4.97,
+  "test_rmse": 6.218,
+  "test_r2": 0.9891,
+  "kfold_cv_r2_mean": 0.9972,
+  "kfold_cv_r2_std": 0.0001,
+  "tscv_cv_r2_mean": 0.515,
+  "tscv_cv_r2_std": 0.481,
+  "feature_importance": [
+    {
+      "Feature": "Gold_MA_7",
+      "Importance": 104.96210095014901
+    },
+    {
+      "Feature": "Gold_Price_Lag1",
+      "Importance": 19.73491102149799
+    },
+    {
+      "Feature": "Gold_Price_Lag7",
+      "Importance": 16.36396836245234
+    },
+    {
+      "Feature": "Gold_MA_30",
+      "Importance": 5.131330110288687
+    },
+    {
+      "Feature": "USD_INR_Rate",
+      "Importance": 2.5756841546309808
+    },
+    {
+      "Feature": "Silver_Price_USD",
+      "Importance": 1.6853537551894309
+    },
+    {
+      "Feature": "SP500_Index",
+      "Importance": 1.4850330492133714
+    },
+    {
+      "Feature": "Inflation_Rate_%",
+      "Importance": 1.4202777930654635
+    },
+    {
+      "Feature": "VIX_Volatility_Index",
+      "Importance": 1.097134443227827
+    },
+    {
+      "Feature": "Crude_Oil_USD",
+      "Importance": 1.056394032977245
+    },
+    {
+      "Feature": "Gold_Volatility_7",
+      "Importance": 0.23919461792232669
+    },
+    {
+      "Feature": "Interest_Rate_%",
+      "Importance": 0.19675806209445496
+    },
+    {
+      "Feature": "Gold_Trading_Volume",
+      "Importance": 0.19290169935683893
+    },
+    {
+      "Feature": "Gold_ETF_Holdings_Tonnes",
+      "Importance": 0.18226309699995855
+    },
+    {
+      "Feature": "USD_Index",
+      "Importance": 0.13595026370943977
+    }
+  ],
+  "all_model_results": [
+    {
+      "Model": "Linear Regression",
+      "Test_MAE": 4.97,
+      "Test_RMSE": 6.218,
+      "Test_R2": 0.9891,
+      "KFold_CV_R2_Mean": 0.9972,
+      "KFold_CV_R2_Std": 0.0001,
+      "TimeSeriesCV_R2_Mean": 0.515,
+      "TimeSeriesCV_R2_Std": 0.481
+    },
+    {
+      "Model": "Lasso Regression",
+      "Test_MAE": 5.017,
+      "Test_RMSE": 6.252,
+      "Test_R2": 0.989,
+      "KFold_CV_R2_Mean": 0.997,
+      "KFold_CV_R2_Std": 0.0001,
+      "TimeSeriesCV_R2_Mean": 0.7416,
+      "TimeSeriesCV_R2_Std": 0.2695
+    },
+    {
+      "Model": "Ridge Regression",
+      "Test_MAE": 5.039,
+      "Test_RMSE": 6.318,
+      "Test_R2": 0.9888,
+      "KFold_CV_R2_Mean": 0.9971,
+      "KFold_CV_R2_Std": 0.0001,
+      "TimeSeriesCV_R2_Mean": 0.4886,
+      "TimeSeriesCV_R2_Std": 0.5212
+    },
+    {
+      "Model": "Random Forest",
+      "Test_MAE": 50.706,
+      "Test_RMSE": 69.786,
+      "Test_R2": -0.3717,
+      "KFold_CV_R2_Mean": 0.9971,
+      "KFold_CV_R2_Std": 0.0001,
+      "TimeSeriesCV_R2_Mean": -0.9486,
+      "TimeSeriesCV_R2_Std": 2.0358
+    },
+    {
+      "Model": "Gradient Boosting",
+      "Test_MAE": 55.528,
+      "Test_RMSE": 75.065,
+      "Test_R2": -0.5871,
+      "KFold_CV_R2_Mean": 0.997,
+      "KFold_CV_R2_Std": 0.0001,
+      "TimeSeriesCV_R2_Mean": -0.9024,
+      "TimeSeriesCV_R2_Std": 1.7847
+    },
+    {
+      "Model": "XGBoost",
+      "Test_MAE": 58.199,
+      "Test_RMSE": 76.7,
+      "Test_R2": -0.657,
+      "KFold_CV_R2_Mean": 0.9971,
+      "KFold_CV_R2_Std": 0.0002,
+      "TimeSeriesCV_R2_Mean": -1.2745,
+      "TimeSeriesCV_R2_Std": 1.9957
+    },
+    {
+      "Model": "SVR",
+      "Test_MAE": 131.729,
+      "Test_RMSE": 157.554,
+      "Test_R2": -5.9917,
+      "KFold_CV_R2_Mean": 0.9975,
+      "KFold_CV_R2_Std": 0.0002,
+      "TimeSeriesCV_R2_Mean": -4.8426,
+      "TimeSeriesCV_R2_Std": 2.3787
+    }
+  ],
+  "train_rows": 3077,
+  "test_rows": 544,
+  "data_min_date": "2015-02-11",
+  "data_max_date": "2028-12-27",
+  "feature_medians": {
+    "Silver_Price_USD": 23.11,
+    "Crude_Oil_USD": 74.37,
+    "USD_Index": 94.0,
+    "SP500_Index": 4101.51,
+    "Inflation_Rate_%": 1.39,
+    "Interest_Rate_%": 2.5,
+    "VIX_Volatility_Index": 25.69,
+    "USD_INR_Rate": 83.63,
+    "Gold_ETF_Holdings_Tonnes": 897.95,
+    "Gold_Trading_Volume": 307.58,
+    "Gold_Price_Lag1": 1360.42,
+    "Gold_Price_Lag7": 1359.82,
+    "Gold_MA_7": 1360.4271428571428,
+    "Gold_MA_30": 1359.6086666666667,
+    "Gold_Volatility_7": 5.441799421818969
+  },
+  "feature_min": {
+    "Silver_Price_USD": 18.17,
+    "Crude_Oil_USD": 33.18,
+    "USD_Index": 88.54,
+    "SP500_Index": 1937.41,
+    "Inflation_Rate_%": -0.5,
+    "Interest_Rate_%": 0.62,
+    "VIX_Volatility_Index": 9.0,
+    "USD_INR_Rate": 64.71,
+    "Gold_ETF_Holdings_Tonnes": 734.02,
+    "Gold_Trading_Volume": 128.15,
+    "Gold_Price_Lag1": 1083.39,
+    "Gold_Price_Lag7": 1083.39,
+    "Gold_MA_7": 1092.08,
+    "Gold_MA_30": 1099.903,
+    "Gold_Volatility_7": 1.3697253799934563
+  },
+  "feature_max": {
+    "Silver_Price_USD": 28.17,
+    "Crude_Oil_USD": 109.48,
+    "USD_Index": 101.88,
+    "SP500_Index": 5500.0,
+    "Inflation_Rate_%": 3.96,
+    "Interest_Rate_%": 4.12,
+    "VIX_Volatility_Index": 53.67,
+    "USD_INR_Rate": 88.0,
+    "Gold_ETF_Holdings_Tonnes": 1044.96,
+    "Gold_Trading_Volume": 515.1,
+    "Gold_Price_Lag1": 1653.81,
+    "Gold_Price_Lag7": 1648.42,
+    "Gold_MA_7": 1641.4342857142858,
+    "Gold_MA_30": 1630.8623333333337,
+    "Gold_Volatility_7": 13.71431455849849
+  }
+}
